@@ -1,0 +1,1 @@
+<a {{ !empty($href) ? 'href=' . $href : '' }} class="text-white btn btn-{{ $theme }} {{ !empty($big) ? '' : 'btn-sm' }} shadow-sm {{ !empty($classes) ? $classes : '' }}"><i class="fas fa-{{ $icon }} fa-sm text-white"></i> {{ $text }}</a>

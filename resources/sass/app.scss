@@ -1,0 +1,138 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Fontawesome
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  color: rgba(9,9,16,.7);
+}
+
+p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.text-gray-500 {
+  color: #b7b9cc!important;
+}
+
+.danger-text {
+  color: $bootstrap-alert;
+}
+
+.info-text {
+  color: $bootstrap-info;
+}
+
+
+.small-text {
+  font-size: 0.8rem;
+}
+
+a {
+  cursor: pointer;
+  &.underlined {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 20px 0;
+  }
+}
+
+input, textarea {
+  max-width: 440px;
+}
+
+button.d-block {
+  width: 100%;
+}
+
+.card {
+  vertical-align: top;
+}
+
+.alert {
+  &.alert-info {
+    background: $bootstrap-info !important;
+    border-color: $bootstrap-info !important;
+  }
+  &.alert-danger {
+    background: $bootstrap-alert !important;
+    border-color: $bootstrap-alert !important;
+  }
+}
+
+.page-item {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  .page-link {
+    padding: 0.5rem 0.8rem;
+    margin: 0 2px;
+    min-width: 32px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: #858796;
+    &:hover {
+      z-index: 0;
+      color: white;
+      text-decoration: none;
+      background-color: $theme-blue;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow-small;
+    }
+  }
+  &.active {
+    .page-link {
+      background: $theme-blue;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow-small;
+    }
+  }
+  &.disabled {
+    .page-link {
+      background: transparent;
+    }
+  }
+}
+
+.dropdown-item {
+  color: rgba(0, 0, 0, 0.5);
+  i {
+    font-size: 0.8rem;
+  }
+}
+
+.love-button {
+  padding: 15px;
+  background: #fff;
+  i {
+    font-size: 1.2rem;
+    vertical-align: middle;
+    color: #b7b9cc;
+  }
+  &.liked {
+    background: $bootstrap-alert;
+    i {
+      color: #fff;
+    }
+  }
+}
+.love-placeholder {
+  i {
+    font-size: 1.2rem;
+    vertical-align: text-top;
+  }
+}

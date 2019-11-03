@@ -1,0 +1,1 @@
+<button type="submit" class="btn btn-{{ $theme }} {{ !empty($big) ? '' : 'btn-sm' }} {{ !empty($classes) ? $classes : '' }} shadow-sm"><i class="fas fa-{{ $icon }} fa-sm text-white"></i> {{ $text }}</button>
